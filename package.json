@@ -1,0 +1,37 @@
+{
+  "name": "cli-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for CLI apps in Node+Typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"tsc --watch\" \"nodemon ./dist/index.js ts\"",
+    "clear": "rimraf dist",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexintosh/cli-boilerplate.git"
+  },
+  "keywords": [
+    "cli",
+    "node",
+    "typescript"
+  ],
+  "author": "Alessio Delmonti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexintosh/cli-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Alexintosh/cli-boilerplate#readme",
+  "dependencies": {
+    "caporal": "^1.4.0",
+    "concurrently": "^5.2.0",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.11",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
+  }
+}
